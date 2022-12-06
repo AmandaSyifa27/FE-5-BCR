@@ -1,0 +1,514 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial;
+  margin-top: 0;
+  font-weight: 700;
+  padding: 0;
+}
+
+header {
+  background-color: #f1f3ff;
+  position: relative;
+}
+.navbar {
+  margin: 0 249px auto 136px;
+  color: black;
+}
+.container1-header {
+  display: flex;
+  margin-left: 136px;
+}
+.container1-header h1 {
+  margin: 118px 32px auto auto;
+}
+.container1-header p {
+  margin: 16px 132px auto auto;
+}
+.container1-header button {
+  margin: 16px auto 87px auto;
+}
+button {
+  background-color: #5cb85f;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  padding: 8px 12px;
+  text-align: center;align-items: center;
+  justify-content: center;
+}
+.button2 strong, .button1 strong{
+  color: white;
+}
+.imgcar {
+  margin-top: 62px;
+}
+.imgcar img {
+  margin-right: 0;
+}
+
+.container2-service {
+  display: flex;
+  margin: 104px 207px 100px auto;
+  width: 1027px;
+  /* margin: auto; */
+}
+.imgservice {
+  margin-right: 90px;
+}
+.serv-li {
+  list-style-type: none;
+  padding: 0;
+}
+.serv-li li {
+  line-height: 40px;
+}
+li svg {
+  margin-right: 16px;
+  /* margin-left: -30px; */
+}
+
+.container3-whyus {
+  margin: 100px 136px;
+}
+.article3 {
+  line-height: 60px;
+}
+.article3,
+.article3a {
+  margin-left: -47px;
+}
+.card-1 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+.card1a {
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  padding: 24px;
+  margin-right: 24px;
+  height: auto;
+}
+.card1a h5 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.container4-testi {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container4-testi p {
+  margin-top: 16px;
+}
+.card {
+  width: auto !important;
+  margin-right: 32px;
+  justify-content: center;
+  align-items: center;
+}
+.card-content {
+  width: 619px;
+  height: 270px;
+  background-color: #f1f3ff;
+  padding: 69px 32px 69px 46px;
+  display: flex;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+}
+.card2text {
+  margin-left: 46px;
+}
+.card2text svg {
+  margin-bottom: 8px;
+}
+.card2text p {
+  margin-top: 8px;
+}
+
+.contain-card-3 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 156px;
+}
+.card3 {
+  width: 1168px;
+  height: 326px;
+  background-color: #0d28a6;
+  border-radius: 13px;
+  color: white;
+  /* padding: 64px 277.5px; */
+}
+.card3 h1 {
+  margin-top: 64px;
+  margin-bottom: 16px;
+}
+.article-card-3 p {
+  /* width: 468px; */
+  justify-content: center;
+  align-items: center;
+  margin-right: 340px;
+  margin-left: 340px;
+  margin-bottom: 0;
+  /* height: 40px; */
+}
+.card3 button {
+  margin-top: 52px;
+}
+
+.container5-faq {
+  display: flex;
+  /* margin: 100px auto 150px 136px; */
+  justify-content: center;
+  margin-top: 100px;
+}
+.article5 {
+  width: 415px;
+  margin-right: 132px;
+}
+.faq {
+  border: 1px solid #d4d4d4 !important;
+  border-radius: 4px;
+  width: 668px;
+  margin-bottom: 16px;
+}
+.accordion-body {
+  font-weight: 400;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  /* width: 1141px; */
+}
+.address {
+  margin-right: 86px;
+  width: 285px;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  color: black;
+  font-weight: 400;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: #0d28a6;
+}
+a:link {
+  text-decoration: none;
+  margin-bottom: 16px;
+  color: black;
+}
+li {
+  margin-bottom: 16px;
+}
+.socmed {
+  width: 268px;
+  margin-left: 86px;
+}
+.copyright {
+  margin-left: 130px;
+}
+.soc-icon a {
+  margin-right: 16px;
+}
+
+.form {
+  position: absolute;
+  top: 503px;
+  background: white;
+  border-radius: 8px;
+  margin: auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  width: 1047px;
+  left: 0;
+  right: 0;
+}
+.input {
+  display: flex;
+  height: 106px;
+  padding: 24px;
+  font-weight: 300;
+  align-items: flex-end;
+  border-radius: 8px;
+  justify-content: space-between;
+
+  /* box-sizing: border-box; */
+}
+.form-control {
+  font-size: 12px;
+}
+.form-select {
+  font-size: 12px;
+  border: 1px solid #d0d0d0;
+  border-radius: 2px;
+  width: 208px;
+}
+.form button {
+  height: 36px;
+  align-items: flex-end;
+}
+
+/* Hasil pencarian page */
+.header {
+  height: 266px;
+}
+.form2 {
+  top: 189px;
+}
+.form2 p {
+  margin: 24px auto auto 24px;
+}
+.editButton {
+  color: #0D28A6;
+  background: white;
+  border: 1px solid #0D28A6;
+  border-radius: 2px;
+  padding: auto;
+  /* font-weight: 700; */
+}
+.editButton b {
+  height: auto;
+}
+.card-group {
+  margin-top: 113px;
+  width: 1047px;
+  margin-bottom: 283px;
+  display: flex;
+  justify-content: space-between;
+}
+.card-hasil {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  /* margin-right: 24px; */
+  padding: 24px;
+  line-height: 20px;
+}
+/* .card-hasil:nth-child(2) {
+  margin-right: 24px;
+  margin-left: 24px;
+} */
+small {
+  font-weight: 400;
+}
+.article-hasil button {
+  width: -webkit-fill-available;
+}
+
+.detail-container {
+  margin-top: 113px;
+  display: flex;
+  justify-content: center;
+}
+.detail-car {
+  box-shadow: 0px 0px 4px rgb(0 0 0 / 15%);
+  border-radius: 8px;
+  padding: 24px;
+  margin-right: 32px;
+}
+.detail-car h6 {
+  font-weight: 700;
+  line-height: 35px;
+}
+.detail-car ul {
+  list-style-type: unset;
+  font-weight: 700;
+}
+.detail-car ul li {
+  line-height: 16px;
+}
+.detail-accordion {
+  font-weight: 700;
+  margin-right: -20px;
+  margin-left: -20px;
+}
+.detail-accor {
+  border: none;
+}
+
+.detail-card {
+  box-shadow: 0px 0px 4px rgb(0 0 0 / 15%);
+  border-radius: 8px;
+  padding: 28px 23px 84px 24px;
+  width: 405px;
+  height: 435px;
+}
+.detail-card-article h6 {
+  font-weight: bold;
+}
+
+.image-detail {
+  width: 270px;
+}
+
+/* warnawarna */
+.red {
+  background-color: red;
+}
+
+
+@media (max-width: 767px) {
+  .navbar {
+    margin: 0;
+    margin-bottom: 0;
+  }
+  .navig {
+    width: 50%;
+  }
+  .container1-header {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .article1 {
+    margin: 0 16px;
+  }
+  .imgcar {
+    margin-top: 24px;
+  }
+  .imgcar img {
+    margin-left: 16px;
+    width: 96%;
+  }
+  .container1-header h1 {
+    margin-top: 0;
+  }
+  .container1-header p {
+    margin-top: 0;
+  }
+  .container1-header button {
+    margin-bottom: 0;
+  }
+
+  .container2-service {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: auto;
+  }
+  .imgservice {
+    margin-right: 0;
+  }
+  .imgservice img {
+    width: 74%;
+    margin: 60px 54px 24px 54px;
+  }
+  .article2 {
+    margin: 16px;
+    width: auto;
+  }
+  .serv-li li {
+    line-height: 20px;
+  }
+
+  .container3-whyus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 16px 60px 16px;
+  }
+  .article3 {
+    text-align: center;
+  }
+  .card-1 {
+    flex-direction: column;
+  }
+  .card1a {
+    width: auto;
+    height: 196px;
+    margin-bottom: 20px;
+  }
+
+  .card-content {
+    width: 328px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 32px;
+  }
+  .card2text {
+    margin: 0;
+  }
+  .card2text svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 24px;
+  }
+
+  .contain-card-3 {
+    margin: 60px 16px 40px;
+  }
+  .card3 {
+    width: 328px;
+    height: auto;
+  }
+  .article-card-3 {
+    margin: 64px 58px 64px;
+  }
+  .article-card-3 p {
+    margin: auto;
+  }
+  .article-card-3 button {
+    margin-top: 32px;
+  }
+
+  .card {
+    display: flex;
+    /* justify-content: space-between; */
+  }
+
+  .container5-faq {
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+    margin-left: 16px;
+    margin-top: 40px;
+  }
+  .article5 {
+    text-align: center;
+    /* width: 328px; */
+    margin: 0;
+  }
+  .faq {
+    width: auto;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+  }
+  .address,
+  .features2,
+  .socmed,
+  .copyright {
+    margin: 0;
+  }
+  .features2 {
+    margin-left: -16px;
+  }
+  .copyright {
+    margin-top: 16px;
+  }
+}
