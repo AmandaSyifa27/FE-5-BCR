@@ -15,8 +15,16 @@ header {
   position: relative;
 }
 .navbar {
-  margin: 0 249px auto 136px;
-  color: black;
+  margin-left: 10.4%;
+  margin-right: 10.4%;
+}
+.container-fluid {
+  padding: 0;
+}
+.side-bar button {
+  height: fit-content;
+  border-radius: 2px;
+  margin-left: 32px;
 }
 .container1-header {
   display: flex;
@@ -35,7 +43,7 @@ button {
   background-color: #5cb85f;
   color: white;
   border: none;
-  border-radius: 2px;
+  border-radius: 2px !important;
   padding: 8px 12px;
   text-align: center;align-items: center;
   justify-content: center;
@@ -47,6 +55,7 @@ button {
   margin-top: 62px;
 }
 .imgcar img {
+  margin-bottom: 0;
   margin-right: 0;
 }
 
@@ -186,6 +195,9 @@ li svg {
 .accordion-body {
   font-weight: 400;
 }
+.detail-accor {
+  border: none !important;
+}
 
 .footer {
   display: flex;
@@ -288,23 +300,19 @@ li {
   height: auto;
 }
 .card-group {
-  margin-top: 113px;
+  margin-top: 78px;
   width: 1047px;
   margin-bottom: 283px;
-  display: flex;
-  justify-content: space-between;
+  margin-top: 111px !important;
+  /* justify-content: space-between; */
 }
 .card-hasil {
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
-  /* margin-right: 24px; */
   padding: 24px;
   line-height: 20px;
+  width: 32%;
 }
-/* .card-hasil:nth-child(2) {
-  margin-right: 24px;
-  margin-left: 24px;
-} */
 small {
   font-weight: 400;
 }
@@ -352,6 +360,11 @@ small {
 }
 .detail-card-article h6 {
   font-weight: bold;
+  margin-top: 24px;
+}
+.detail-card-article span {
+  margin-top: 18px;
+  display: block;
 }
 
 .image-detail {
@@ -364,13 +377,87 @@ small {
 }
 
 
+
+
+/* PLATINUM */
+
+/* Sign In/Up page */
+.signin {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  height: 100vh;
+}
+.signin-second {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+
+}
+.signin-content {
+  width: 52%;
+}
+.signin-form h3 {
+  margin-bottom: 32px;
+  margin-top: 32px;
+  font-weight: 700;
+}
+.signin-form form {
+  display: grid;
+}
+.signin-form form input {
+  margin-top: 9px;
+  margin-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: -webkit-fill-available;
+}
+.signin-form form button {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  background-color: #0D28A6;
+  border-radius: 2px;
+}
+.signin-content p {
+  text-align: center;
+}
+.signin-content p a {
+  font-weight: 700;
+  color: #0D28A6;
+  text-decoration: underline;
+}
+.signin-pic {
+  width: 50%;
+  background: #0D28A6;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  flex-direction: column;
+}
+.signin-pic h1 {
+  color: white;
+  opacity: 0.7;
+  font-weight: 500;
+  margin: 112px auto 49px auto;
+  font-size: 48px;
+}
+.signin-pic img {
+  width: 605px;
+}
+
+
+
 @media (max-width: 767px) {
   .navbar {
     margin: 0;
     margin-bottom: 0;
   }
   .navig {
-    width: 50%;
+    width: 50% !important;
   }
   .container1-header {
     display: flex;
@@ -435,6 +522,9 @@ small {
     height: 196px;
     margin-bottom: 20px;
   }
+  .card1a {
+    width: fit-content;
+  }
 
   .card-content {
     width: 328px;
@@ -487,6 +577,7 @@ small {
     text-align: center;
     /* width: 328px; */
     margin: 0;
+    width: auto;
   }
   .faq {
     width: auto;
@@ -511,4 +602,26 @@ small {
   .copyright {
     margin-top: 16px;
   }
+
+  
+/* PALTINUM */
+
+  .first-col {
+    margin-top: 29px;
+  }
+  .signin-content {
+    width: 328px;
+  }
+  .second-col {
+    display: none;
+  }
+  .signin-logo {
+    flex-direction: row;
+    display: flex !important;
+    justify-content: space-between;
+  }
+  .signin-logo svg:nth-child(2) {
+    display: flex !important;
+  }
+  
 }

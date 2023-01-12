@@ -1,12 +1,13 @@
 import React from "react"
 import { Offcanvas, Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import carImg from "../assets/img_car2.png"
 
 const Header = () => {
   return (
     <header>
-      {["xxl"].map((expand) => (
-        <Navbar key={expand} expand={expand} className="mb-3">
+      {["xl"].map((expand) => (
+        <Navbar key={expand} expand={expand} className="navbar mb-3">
           <Container fluid>
             <div className="logo">
               <svg
@@ -32,6 +33,7 @@ const Header = () => {
                   <Nav.Link href="#Why_Us">Why Us</Nav.Link>
                   <Nav.Link href="#Testimonial">Testimonial</Nav.Link>
                   <Nav.Link href="#FAQ">FAQ</Nav.Link>
+                  <button className="button1 register-btn"><Link to="/signup"><strong>Register</strong></Link></button>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
@@ -56,7 +58,7 @@ const Header = () => {
           </button>
         </div>
         <div className="imgcar text-end">
-          <img src="img_car2.png" alt="gambar" />
+          <img src={carImg} alt="gambar" />
         </div>
       </div>
     </header>

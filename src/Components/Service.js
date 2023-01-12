@@ -1,10 +1,11 @@
 import React from "react";
+import imageService from "../assets/img_service2.png"
 
 const Service = () => {
   return (
     <div className="container2-service" id="Our_container2-service">
       <div className="imgservice">
-        <img src="img_service2.png" alt="gambar" />
+        <img src={imageService} alt="gambar" />
       </div>
       <div className="article2">
         <h2>

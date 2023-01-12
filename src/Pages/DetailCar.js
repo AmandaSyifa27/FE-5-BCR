@@ -13,29 +13,24 @@ ubahWarna.onclick = function() {
 const DetailCar = () => {
 
   const params = useParams();
-  // console.log(params.carId)
 
   const [car, setCar] = useState();
   useEffect(() => {
-    // declare the data fetching function
     const fetchData = async () => {
       const res = await axios.get(`https://bootcamp-rent-cars.herokuapp.com/admin/car/${params.carId}`, { headers:{access_token:`eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGJjci5pbyIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTY2NTI0MjUwOX0.ZTx8L1MqJ4Az8KzoeYU2S614EQPnqk6Owv03PUSnkzc`}});
       if (res.status === 200) {
         setCar(res.data);
       }
-      // setCar(res.data);
       console.log(car)
     };
-    // call the function
     fetchData()
-      // make sure to catch any error
       .catch(console.error);
   }, [params.carId]);
 
     return (
         <>
             <header className="header">
-          {["xxl"].map((expand) => (
+          {["xl"].map((expand) => (
             <Navbar key={expand} expand={expand} className="mb-3">
               <Container fluid>
                 <div className="logo">
@@ -58,10 +53,10 @@ const DetailCar = () => {
                   <Offcanvas.Header closeButton></Offcanvas.Header>
                   <Offcanvas.Body>
                     <Nav className="side-bar justify-content-end flex-grow-1 pe-3 color-black">
-                      <Nav.Link href="#Our_container2-service">Our Service</Nav.Link>
-                      <Nav.Link href="#Why_Us">Why Us</Nav.Link>
-                      <Nav.Link href="#Testimonial">Testimonial</Nav.Link>
-                      <Nav.Link href="#FAQ">FAQ</Nav.Link>
+                      <Nav.Link href="/#Our_container2-service">Our Service</Nav.Link>
+                      <Nav.Link href="/#Why_Us">Why Us</Nav.Link>
+                      <Nav.Link href="#/Testimonial">Testimonial</Nav.Link>
+                      <Nav.Link href="/#FAQ">FAQ</Nav.Link>
                     </Nav>
                   </Offcanvas.Body>
                 </Navbar.Offcanvas>
@@ -165,6 +160,7 @@ const DetailCar = () => {
                   <path d="M4.5 5.5C5.60457 5.5 6.5 4.60457 6.5 3.5C6.5 2.39543 5.60457 1.5 4.5 1.5C3.39543 1.5 2.5 2.39543 2.5 3.5C2.5 4.60457 3.39543 5.5 4.5 5.5Z" stroke="#8A8A8A" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg> {car.category}
                   </small>
+                  <span>Tentukan lama sewa mobil (max. 7 hari)</span>
                   <div className="d-flex justify-content-between">
                     <p>Total</p>
                     <p>Rp. {car.price}</p>

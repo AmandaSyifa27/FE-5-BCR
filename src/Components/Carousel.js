@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import testiImage2 from "../assets/testiimg2.png";
+import testiImage1 from "../assets/testiimg1.png";
 
 // function SampleNextArrow(props) {
 //   const { nextArrow, style, onClick } = props;
@@ -61,7 +63,7 @@ class Carousel extends Component {
         <div className="card">
           <div className="card-content">
             <div className="card2img">
-              <img src="testiimg2.png" alt="gambar" />
+              <img src={testiImage2} alt="gambar" />
             </div>
             <div className="card2text">
               <svg
@@ -104,7 +106,7 @@ class Carousel extends Component {
         <div class="card">
           <div className="card-content">
             <div className="card2img">
-              <img src="testiimg1.png" alt="gambar" />
+              <img src={testiImage1} alt="gambar" />
             </div>
             <div className="card2text">
               <svg
@@ -147,7 +149,7 @@ class Carousel extends Component {
         <div class="card">
           <div className="card-content">
             <div className="card2img">
-              <img src="testiimg2.png" alt="gambar" />
+              <img src={testiImage2} alt="gambar" />
             </div>
             <div className="card2text">
               <svg
@@ -190,7 +192,7 @@ class Carousel extends Component {
         <div class="card">
           <div className="card-content">
             <div className="card2img">
-              <img src="testiimg1.png" alt="gambar" />
+              <img src={testiImage1} alt="gambar" />
             </div>
             <div className="card2text">
               <svg
@@ -233,7 +235,7 @@ class Carousel extends Component {
         <div class="card">
           <div className="card-content">
             <div className="card2img">
-              <img src="testiimg2.png" alt="gambar" />
+              <img src={testiImage2} alt="gambar" />
             </div>
             <div className="card2text">
               <svg
@@ -276,7 +278,7 @@ class Carousel extends Component {
         <div class="card">
           <div className="card-content">
             <div className="card2img">
-              <img src="testiimg1.png" alt="gambar" />
+              <img src={testiImage1} alt="gambar" />
             </div>
             <div className="card2text">
               <svg
@@ -319,7 +321,7 @@ class Carousel extends Component {
         <div class="card">
           <div className="card-content">
             <div className="card2img">
-              <img src="testiimg2.png" alt="gambar" />
+              <img src={testiImage2} alt="gambar" />
             </div>
             <div className="card2text">
               <svg

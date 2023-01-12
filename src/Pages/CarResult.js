@@ -13,7 +13,7 @@ const CarResult = () => {
   return (
     <>
         <header className="header">
-          {["xxl"].map((expand) => (
+          {["xl"].map((expand) => (
             <Navbar key={expand} expand={expand} className="mb-3">
               <Container fluid>
                 <div className="logo">
@@ -36,10 +36,10 @@ const CarResult = () => {
                   <Offcanvas.Header closeButton></Offcanvas.Header>
                   <Offcanvas.Body>
                     <Nav className="side-bar justify-content-end flex-grow-1 pe-3 color-black">
-                      <Nav.Link href="#Our_container2-service">Our Service</Nav.Link>
-                      <Nav.Link href="#Why_Us">Why Us</Nav.Link>
-                      <Nav.Link href="#Testimonial">Testimonial</Nav.Link>
-                      <Nav.Link href="#FAQ">FAQ</Nav.Link>
+                      <Nav.Link href="/#Our_container2-service">Our Service</Nav.Link>
+                      <Nav.Link href="/#Why_Us">Why Us</Nav.Link>
+                      <Nav.Link href="/#Testimonial">Testimonial</Nav.Link>
+                      <Nav.Link href="/#FAQ">FAQ</Nav.Link>
                     </Nav>
                   </Offcanvas.Body>
                 </Navbar.Offcanvas>
@@ -93,9 +93,9 @@ const CarResult = () => {
             </button>
         </form>
       </div>
-      <div className="row card-group mx-auto d-flex justify-content-between">
-      {cars.map((car) => (
-          <div className="col-4 card-hasil" key={car.id}>
+      <div className=" card-group mx-auto d-flex justify-content-between">
+      {cars.map((car) =>  (
+          <div className="card-hasil" key={car.id}>
           <div className="content-hasil">
             <div className="img-hasil">
               <img alt="carResult" src={car.image} className="img-fluid"></img>

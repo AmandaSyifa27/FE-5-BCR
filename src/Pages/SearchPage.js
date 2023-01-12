@@ -1,4 +1,3 @@
-// import axios from "axios";
 import axios from "axios";
 import React, { useState } from "react";
 import {
@@ -8,17 +7,15 @@ import {
   Container,
   Form,
 } from "react-bootstrap";
-import { Link, useNavigate } from "react-router-dom";
-// import APICar from "../apis/APICar";
+import { useNavigate } from "react-router-dom";
 import Footer from "../Components/Footer";
-
+import carImg from "../assets/img_car2.png"
 
 const SearchPage = () => {
 
   const navigate = useNavigate();
 
-
-  const [cars, setCars] = useState([]); 
+  const [cars, setCars] = useState([]);
 
   const handelSearch = async (e) => {
     e.preventDefault();
@@ -66,21 +63,10 @@ const SearchPage = () => {
 
   }
 
-  // useEffect(() => {
-  //   fetch('https://bootcamp-rent-cars.herokuapp.com/customer/car')
-  //   .then(res => {
-  //     return res.json();
-  //   })
-  //   .then(data => {
-  //     setCars(data);
-  //     console.log(data)
-  //   })
-  // }, [])
-
   return (
     <div>
       <header>
-        {["xxl"].map((expand) => (
+        {["xl"].map((expand) => (
           <Navbar key={expand} expand={expand} className="mb-3">
             <Container fluid>
               <div className="logo">
@@ -105,10 +91,10 @@ const SearchPage = () => {
                 <Offcanvas.Header closeButton></Offcanvas.Header>
                 <Offcanvas.Body>
                   <Nav className="side-bar justify-content-end flex-grow-1 pe-3 color-black">
-                    <Nav.Link href="#Our_container2-service">Our Service</Nav.Link>
-                    <Nav.Link href="#Why_Us">Why Us</Nav.Link>
-                    <Nav.Link href="#Testimonial">Testimonial</Nav.Link>
-                    <Nav.Link href="FAQ">FAQ</Nav.Link>
+                    <Nav.Link href="/#Our_container2-service">Our Service</Nav.Link>
+                    <Nav.Link href="/#Why_Us">Why Us</Nav.Link>
+                    <Nav.Link href="/#Testimonial">Testimonial</Nav.Link>
+                    <Nav.Link href="/#FAQ">FAQ</Nav.Link>
                   </Nav>
                 </Offcanvas.Body>
               </Navbar.Offcanvas>
@@ -129,7 +115,7 @@ const SearchPage = () => {
             </p>
           </div>
           <div className="imgcar">
-            <img src="img_car2.png" alt="gambar" />
+            <img src={carImg} alt="gambar" />
           </div>
         </div>
       </header>
@@ -177,27 +163,6 @@ const SearchPage = () => {
           </button>
         </form>
       </div>
-      
-      {/* <div className="row card-group mx-auto d-flex flex-wrap justify-content-between">
-      {cars.map((car) => (
-          <div className="col-4 card-hasil" key={car.id}>
-          <div className="content-hasil">
-            <div className="img-hasil">
-              <img alt="carResult" src={car.image} className="img-fluid"></img>
-            </div>
-            <div className="article-hasil">
-              <p><small>{car.name}</small></p>
-              <p className="car-price">Rp. {car.price} / hari</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-              <button className="button2 d-flex align-items-end"
-            onClick={(e) => {
-              e.preventDefault((window.location.href = "/detail"));
-            }}>Pilih Mobil</button>
-            </div>
-          </div>
-        </div>
-      ))}
-      </div> */}
       <Footer />
     </div>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+// import imageService from "../assets/img_service2.png";
 
 const WhyUs = () => {
   return (
@@ -10,7 +11,7 @@ const WhyUs = () => {
         <p>Mengapa harus pilih Binar Car Rental?</p>
       </div>
       <div className="card-1">
-        <div className="card1a col-3">
+        <div className="card1a col-12 col-lg-3">
           <svg
             width="32"
             height="32"
@@ -37,7 +38,7 @@ const WhyUs = () => {
             </p>
           </div>
         </div>
-        <div className="card1a col-3">
+        <div className="card1a col-12 col-lg-3">
           <svg
             width="32"
             height="32"
@@ -71,7 +72,7 @@ const WhyUs = () => {
             </p>
           </div>
         </div>
-        <div className="card1a col-3">
+        <div className="card1a col-12 col-lg-3">
           <svg
             width="32"
             height="32"
@@ -106,7 +107,7 @@ const WhyUs = () => {
             </p>
           </div>
         </div>
-        <div className="card1a col-3">
+        <div className="card1a col-12 col-lg-3">
           <svg
             width="32"
             height="32"
